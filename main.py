@@ -3,7 +3,7 @@ import seaborn as sns
 from sklearn.datasets import fetch_openml
 data = fetch_openml(name='wine', version=1, as_frame=True)
 features = list(df.columns)
-selected_features = [features[1], features[2], features[4], features[9], features[10]]
+selected_features = [features[1], features[2], features[4], features[6], features[7]]
 fig, axs  = plt.subplots(1, len(selected_features), figsize = (20,3))
 
 for ax, f in zip(axs, selected_features):
